@@ -41,7 +41,7 @@
 
     - name: "install transcode app"
       git:
-        repo: 'http://gitlab.kni.uek.krakow.pl/wpc/media-upload.git'
+        repo: 'https://github.com/davidh5/Wirtualizacja-aplikacja.git'
         dest: "{{app_path}}"
         force: yes
     - name: "install app dependencies"
@@ -67,7 +67,7 @@
         - nginx
     - name: "install app"
       git:
-        repo: 'http://gitlab.kni.uek.krakow.pl/wpc/media-upload.git'
+        repo: 'https://github.com/davidh5/Wirtualizacja-aplikacja.git'
         dest: "/home/ubuntu/media"
     - name: "install app dependencies"
       pip:
